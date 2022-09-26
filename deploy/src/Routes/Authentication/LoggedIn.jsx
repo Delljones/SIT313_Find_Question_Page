@@ -1,5 +1,5 @@
 import React from "react";
-import './post.css'
+import '../Post/post.css'
 
 function Loggedin() {
     return (

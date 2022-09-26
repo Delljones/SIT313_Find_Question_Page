@@ -1,8 +1,8 @@
 import React from 'react';
 import "./searchbar.css"
 import {Link, Outlet} from "react-router-dom";
-import './Routes/Post'
-import './Routes/Login'
+import '../Post/Post'
+import '../Authentication/Login'
 
 function Searchbar() {
     return (
