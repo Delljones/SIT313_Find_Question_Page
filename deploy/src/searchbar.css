@@ -1,0 +1,46 @@
+
+.searchbar {
+
+    display: flex;
+    background-color: lightblue;
+    padding: initial;
+    align-items: center;
+    justify-content: center;
+}
+
+label {
+    padding: 10px 40px;
+    font-size: 20pt;
+    font-weight: bolder;
+}
+
+#search {
+
+    height: 30pt;
+    margin: 1cm;
+}
+
+.searchbutton {
+    margin: 10px;
+    font-size: 15pt;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+    padding: 4px 10px;
+    transition-duration: 0.4s;
+    background-color: blue;
+    color: white;
+    border: 2px solid black;
+    width: 2cm;
+    text-align: center;
+}
+
+.searchbutton:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+
+  

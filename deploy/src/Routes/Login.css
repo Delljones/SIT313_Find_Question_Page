@@ -1,0 +1,42 @@
+
+.signup {
+    margin-left: 554px;
+    margin-right: 0px;
+    text-decoration: none;
+    padding: 10px 40px;
+    margin-right: 0pt;
+    background: blue;
+    color: white;
+    font-size: 20pt;
+}
+
+.signup:hover {
+    background-color: green;
+    transform: translateY(-2px);
+}
+
+.login {
+    text-decoration: none;
+    background: blue;
+    height: 1cm;
+    width: 12cm;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+    font-size: 20pt;
+    width: 100%;
+    padding: 10px;
+
+}
+
+.login:hover {
+    background-color: green;
+    transform: translateY(-2px);
+}
+
+
+
+
+
