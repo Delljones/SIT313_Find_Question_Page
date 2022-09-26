@@ -6,9 +6,9 @@ import Post from "./Routes/Post/Post";
 import React from "react";
 import Footer from './Routes/Footer/Footer';
 import Profile from "./Routes/Authentication/Profile";
-import './App.css'
 import LoggedOut from "./Routes/Authentication/LoggedOut";
-
+import './App.css'
+import Home from "./Routes/Home";
 
 // main Application - Used for the routing of the project
 function App() {
@@ -17,7 +17,8 @@ function App() {
             <Searchbar/>
             <div className="content">
                 <Routes>
-                    <Route path="/" element={<LoggedOut/>}></Route>
+                    <Route path="/" element={<Home/>}></Route>
+                    <Route path="/loggedout" element={<LoggedOut/>}></Route>
                     <Route path="/login" element={<Login/>}></Route>
                     <Route path="/signup" element={<Signup/>}></Route>
                     <Route path="/post" element={<Post/>}></Route>

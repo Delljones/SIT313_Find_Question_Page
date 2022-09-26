@@ -6,8 +6,6 @@ import Article from "./Article";
 
 
 function Post() {
-
-
 // setting the variables
     const [questionText, setQuestion] = useState()
 // on click for question
@@ -29,12 +27,11 @@ function Post() {
                 <input onClick={questionForm} type="radio" value="question" className="question"/> Question
                 <input onClick={articleState} type="radio" value="article" className="article"/> Article
             </div>
-            // when the button is pressed it will display Question or Article
+            {/*when the button is pressed it will display Question or Article*/}
             <div className="showform">
                 <h1>{questionText}</h1>
             </div>
         </div>
     );
 }
-
 export default Post

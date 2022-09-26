@@ -13,7 +13,7 @@ function Profile() {
     // The function to make sure that the user has signed out
     function onLogout() {
         auth.signOut().then(r => onLogout());
-        navigate("/")
+        navigate("/loggedout")
     }
 
     const [user, setUser] = useState(null)
