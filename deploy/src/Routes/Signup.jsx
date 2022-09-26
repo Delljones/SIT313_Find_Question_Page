@@ -4,6 +4,8 @@ import {useState} from "react";
 import app from './firebase';
 import {getAuth, createUserWithEmailAndPassword} from "firebase/auth";
 function Signup() {
+
+    // setting up credentials to login and then popup with an error or success
     const auth = getAuth(app);
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
@@ -16,7 +18,10 @@ function Signup() {
             })
             .catch((error) => {
                 const errorCode = error.code;
-                alert(errorCode)
+                console.log('error in login', errorCode);
+                if(errorCode.includes("wrong-password")){
+                    alert("Incorrect Username or Password - Please try again ")
+                }
             });
     }
     return (

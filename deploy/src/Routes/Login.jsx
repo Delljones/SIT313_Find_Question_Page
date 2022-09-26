@@ -1,21 +1,23 @@
 import React, {useState} from "react";
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import './Login.css'
 import {getAuth, signInWithEmailAndPassword} from "firebase/auth";
 import app from './firebase';
 import './Signup'
 function Login() {
-
     const auth = getAuth(app);
     const [email, getEmail] = useState("")
     const [password, getPassword] = useState("")
+    const navigate = useNavigate()
     const logins = () => {
-
         signInWithEmailAndPassword(auth, email, password)
+
             .then((userCredential) => {
                 const user = userCredential.user
                 console.log(user);
-                alert("This user has signed in")
+                // Abililty to navigate after the sign in is auth
+                navigate("/profile")
+
             }).catch((error) => {
             const errorMessage = error.message;
             alert(errorMessage);
@@ -24,7 +26,6 @@ function Login() {
 
     return (
         <div className="form">
-
             <Link to='/signup' class="signup" type="submit">Sign Up</Link>
             <br/>
             <label>Enter Your Email</label>
@@ -34,8 +35,7 @@ function Login() {
                    name="email"
                    placeholder="Enter Email"
                    required="required"
-                   onChange={(e) => getEmail(e.target.value)}/>
-            <br/>
+                   onChange={(e) => getEmail(e.target.value)}/><br/>
             <label>Enter your Password</label>
             <input type="password"
                    id="search"
@@ -43,9 +43,7 @@ function Login() {
                    name="password"
                    placeholder="Enter Password"
                    required="required"
-                   onChange={(e) => getPassword(e.target.value)}/>
-            <br/>
-            <br/>
+                   onChange={(e) => getPassword(e.target.value)}/><br/><br/>
             <div className="buttons">
                 <button class="login" onClick={logins}>Log In</button>
             </div>
