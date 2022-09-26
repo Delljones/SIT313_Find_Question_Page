@@ -1,6 +1,5 @@
 
 .searchbar {
-
     display: flex;
     background-color: lightblue;
     padding: initial;
@@ -9,13 +8,11 @@
 }
 
 label {
-    padding: 10px 40px;
     font-size: 20pt;
     font-weight: bolder;
 }
 
 #search {
-
     height: 30pt;
     margin: 1cm;
 }
@@ -26,7 +23,6 @@ label {
     display: inline-block;
     cursor: pointer;
     text-decoration: none;
-    border: none;
     padding: 4px 10px;
     transition-duration: 0.4s;
     background-color: blue;
@@ -34,6 +30,7 @@ label {
     border: 2px solid black;
     width: 2cm;
     text-align: center;
+    border-bottom: 2cm;
 }
 
 .searchbutton:hover {

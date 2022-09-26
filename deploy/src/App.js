@@ -1,4 +1,4 @@
-import './App.css';
+
 import Searchbar from "./Searchbar";
 import './searchbar.css'
 import {Routes, Route} from "react-router-dom";

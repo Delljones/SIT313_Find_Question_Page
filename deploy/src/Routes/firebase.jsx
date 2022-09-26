@@ -1,3 +1,6 @@
+// initilising Firebase  - Able to be seen in
+// https://console.firebase.google.com/u/0/project/sit313-app/authentication/users
+
 import {initializeApp} from "firebase/app";
 const firebaseConfig = {
     apiKey: "AIzaSyBL5y33SFmnV76FYz-XXAnPb7R931w4f40",

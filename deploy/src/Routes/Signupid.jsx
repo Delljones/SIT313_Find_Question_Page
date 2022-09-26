@@ -1,7 +1,5 @@
 import React from "react";
-
 function Signupid() {
-
     return (
         <div>
             <h2>
@@ -10,5 +8,4 @@ function Signupid() {
         </div>
     )
 }
-
 export default Signupid

@@ -3,13 +3,10 @@ import './signup.css'
 import {useState} from "react";
 import app from './firebase';
 import {getAuth, createUserWithEmailAndPassword} from "firebase/auth";
-
-
 function Signup() {
     const auth = getAuth(app);
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
-
     const signups = () => {
         createUserWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
@@ -22,19 +19,15 @@ function Signup() {
                 alert(errorCode)
             });
     }
-
     return (
-
-        <div className='form1'>
+        <div className='form'>
             <label>Enter your Name </label>
             <input type="search"
                    id="name"
                    className="form-control"
                    name="name"
                    placeholder="Please Enter Your Name"
-                   required="required"/>
-            <br/>
-            <br/>
+                   required="required"/><br/><br/>
             <label>Email</label>
             <input type="email"
                    id="email"
@@ -42,8 +35,7 @@ function Signup() {
                    name="email"
                    placeholder="Please Enter your Email"
                    required="required"
-                   onChange={(e) => setEmail(e.target.value)} />
-            <br/>
+                   onChange={(e) => setEmail(e.target.value)} /><br/>
             <label>Password</label>
             <input type="password"
                    id="password"
@@ -51,8 +43,7 @@ function Signup() {
                    name="password"
                    placeholder=" Please Enter Your Password"
                    required="required"
-                   onChange={(e) => setPassword(e.target.value)} />
-            <br/>
+                   onChange={(e) => setPassword(e.target.value)} /><br/>
             <label>Confirm Password</label>
             <input type="password"
                    id="confirmPassword"
@@ -66,5 +57,4 @@ function Signup() {
         </div>
     )
 }
-
 export default Signup

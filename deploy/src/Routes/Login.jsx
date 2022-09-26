@@ -24,9 +24,9 @@ function Login() {
 
     return (
         <div className="form">
+
             <Link to='/signup' class="signup" type="submit">Sign Up</Link>
             <br/>
-
             <label>Enter Your Email</label>
             <input type="email"
                    id="search"
@@ -46,8 +46,12 @@ function Login() {
                    onChange={(e) => getPassword(e.target.value)}/>
             <br/>
             <br/>
-            <button className="login" onClick={logins}>Log In</button>
+            <div className="buttons">
+                <button class="login" onClick={logins}>Log In</button>
+            </div>
         </div>
+
+
     )
 }
 
