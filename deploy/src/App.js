@@ -8,7 +8,7 @@ import Footer from './Routes/Footer/Footer';
 import Profile from "./Routes/Authentication/Profile";
 import LoggedOut from "./Routes/Authentication/LoggedOut";
 import './App.css'
-import Home from "./Routes/Home";
+import Home from "./Routes/Home/Home";
 
 // main Application - Used for the routing of the project
 function App() {
