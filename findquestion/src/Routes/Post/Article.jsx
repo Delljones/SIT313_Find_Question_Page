@@ -11,6 +11,14 @@ function Article() {
                            type="text"
                            placeholder=' Enter your title here'/>
                 </form>
+
+                <form className="image">
+                    <label className="imageLabel"> Add an Image: </label>
+                    <input className="inputImage"
+                    type="file"/>
+                    <button className="uploadImage" type="submit"> Submit</button>
+                </form>
+
                 <form>
                     <label className="label">Abstract</label>
                     <input className="inputAbstract"

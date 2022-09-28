@@ -2,7 +2,7 @@
     background-color:#f1e2e2;
     border: 1px black solid;
     border-radius: 20px;
-    padding: 20pt;
+    padding: 30pt;
     font-size: 20pt; 
     color: 	#bc4304; 
     text-align: left;
@@ -13,9 +13,8 @@
     background-color:#f1e2e2;
     border: 1px black solid;
     border-radius: 20px;
-    padding: 20pt;
     margin-top: 30px;
-    padding-bottom: 20cm;
+    padding: 20pt 20pt 20cm;
 }
 
 .label {
@@ -32,17 +31,29 @@
 
 .inputAbstract{ 
     border-radius: 25px;
-    padding: 10px;
-    padding-bottom: 90px;
+    padding: 10px 10px 90px;
     width: 96%;
     margin-bottom: 20px;
     margin-top: 20px;
 }
 
+.image {
+    padding-top: 1cm;
+    padding-bottom: 1cm;
+
+}
+
+.uploadImage {
+    width: 3cm;
+    font-size: 10pt;
+    height: 1cm;
+    background-color: #874d4d;
+    margin-left: 0;
+}
+
 .inputProblem {
     border-radius: 25px;
-    padding: 10px;
-    padding-bottom: 300px;
+    padding: 10px 10px 300px;
     width: 96%;
     margin-bottom: 20px;
     margin-top: 20px;
