@@ -5,6 +5,7 @@ function Question() {
      <div className="ask">
          <h1>What Would You Like To Ask?</h1>
          <div className="forms">
+
              <form>
                  <label className="label">Enter Title:</label>
                  <input className="input"

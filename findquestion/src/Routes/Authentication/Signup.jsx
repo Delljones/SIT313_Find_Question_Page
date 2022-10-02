@@ -1,12 +1,12 @@
 import React from "react";
 import './signup.css'
 import {useState} from "react";
-import app from '../../Utils/firebase';
+import firebase from '../../Utils/firebase';
 import {getAuth, createUserWithEmailAndPassword} from "firebase/auth";
 function Signup() {
 
     // setting up credentials to login and then popup with an error or success
-    const auth = getAuth(app);
+    const auth = getAuth(firebase);
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
     const signups = () => {

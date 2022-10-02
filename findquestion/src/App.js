@@ -9,6 +9,10 @@ import Profile from "./Routes/Authentication/Profile";
 import LoggedOut from "./Routes/Authentication/LoggedOut";
 import './App.css'
 import Home from "./Routes/Home/Home";
+import QuestionAnswers from "./Routes/Post/QuestionAnswers";
+import firebase from "./Utils/firebase";
+import '@firebase/firestore'
+
 
 // main Application - Used for the routing of the project
 function App() {
@@ -22,6 +26,7 @@ function App() {
                     <Route path="/login" element={<Login/>}></Route>
                     <Route path="/signup" element={<Signup/>}></Route>
                     <Route path="/post" element={<Post/>}></Route>
+                    <Route path="/questionAnswers" element={<QuestionAnswers/>}></Route>
                     <Route path="/profile" element={<Profile/>}></Route>
                 </Routes>
                <Footer/>

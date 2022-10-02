@@ -15,6 +15,7 @@ function Searchbar() {
                            required="required"/>
                     <Link to="/" class="searchbutton" type="submit">Home</Link>
                     <Link to='/post' class="searchbutton" type="submit">Post</Link>
+                    <Link to='/questionAnswers' class="searchbutton" type="submit">Question Answers</Link>
                     <Link to="/login" class="searchbutton" type="submit">Log In</Link>
                     <Link to="/loggedout" class="searchbutton" type="submit">Logout</Link>
                 </form>

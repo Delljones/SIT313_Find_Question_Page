@@ -2,20 +2,19 @@ import React, {useState} from "react";
 import {Link, useNavigate} from "react-router-dom";
 import './Login.css'
 import {getAuth, signInWithEmailAndPassword} from "firebase/auth";
-import app from '../../Utils/firebase';
+import firebase from '../../Utils/firebase';
 import './Signup'
 function Login() {
-    const auth = getAuth(app);
+    const auth = getAuth(firebase);
     const [email, getEmail] = useState("")
     const [password, getPassword] = useState("")
     const navigate = useNavigate()
     const logins = () => {
         signInWithEmailAndPassword(auth, email, password)
-
             .then((userCredential) => {
                 const user = userCredential.user
                 console.log(user);
-                // Abililty to navigate after the sign in is auth
+                // Ability to navigate after the sign in is auth
                 navigate("/profile")
 
             }).catch((error) => {
